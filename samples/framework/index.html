@@ -793,17 +793,17 @@
 
             <div class="button-group filters-button-group">
               <button class="button is-checked" data-filter="*">All</button>
-              <button class="button" data-filter=".angular">Angular</button>
-              <button class="button" data-filter=".jquery">jQuery</button>
-              <button class="button" data-filter=".js">Javascript</button>
-              <button class="button" data-filter=".knockout">Knockout</button>
-              <button class="button" data-filter=".react">React</button>
-              <button class="button" data-filter=".vue">VueJS</button>
-              <button class="button" data-filter=".other">Other</button>
+              <button class="button" data-filter="[data-framework='angular']">Angular</button>
+              <button class="button" data-filter="[data-framework='jquery']">jQuery</button>
+              <button class="button" data-filter="[data-framework='js']">Javascript</button>
+              <button class="button" data-filter="[data-framework='knockout']">Knockout</button>
+              <button class="button" data-filter="[data-framework='react']">React</button>
+              <button class="button" data-filter="[data-framework='vue']">VueJS</button>
+              <button class="button" data-filter="[data-framework='other']">Other</button>
             </div>
 
             <div class="grid">
-              <div class="sample-item js " data-category="angular">
+              <div class="sample-item js " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -824,7 +824,7 @@
                     title="Call custom APIs secured with Azure Active Directory without ADAL JS">
                     Call custom APIs secured with Azure Active Directory without ADAL JS</a></h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Call custom Web API secured with AAD from SharePoint Framework client-side web part
@@ -849,7 +849,7 @@
                   </a>
                 </h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -871,7 +871,7 @@
                   </a>
                 </h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Angular multi-page client-side web part"
@@ -892,7 +892,7 @@
                   </a>
                 </h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="File Upload using AngularJs"
@@ -912,7 +912,7 @@
                     title="File Upload using AngularJs">
                     File Upload using AngularJs</a></h2>
               </div>
-              <div class="sample-item angular  " data-category="angular">
+              <div class="sample-item angular  " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Angular & ngOfficeUIFabric Client-Side Web Part"
@@ -932,7 +932,7 @@
                     title="Angular & ngOfficeUIFabric Client-Side Web Part">Angular & ngOfficeUIFabric Client-Side Web
                     Part</a></h2>
               </div>
-              <div class="sample-item angular  " data-category="angular">
+              <div class="sample-item angular  " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Search Client-Side Web Part Built with Angular v1.x"
@@ -955,7 +955,7 @@
                   </a>
                 </h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Angular client-side web part"
@@ -975,7 +975,7 @@
                     title="Angular client-side web part">
                     Angular client-side web part</a></h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Angular2 Web Part Prototype"
@@ -995,7 +995,7 @@
                     title="Angular2 Web Part Prototype">
                     Angular2 Web Part Prototype</a></h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1016,7 +1016,7 @@
                     Angular Elements in SharePoint Framework
                   </a></h2>
               </div>
-              <div class="sample-item angular " data-category="angular">
+              <div class="sample-item angular " data-framework="angular">
                 <div class="sample">
                   <div class="sample-img" title="Angular Elements with HTML Template File in SharePoint Framework">
                     <a class="sample-link"
@@ -1037,7 +1037,7 @@
                     Angular Elements with HTML Template File in SharePoint Framework
                   </a></h2>
               </div>
-              <div class="sample-item other " data-category="other">
+              <div class="sample-item other " data-framework="other">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Bootstrap Slider Built with jQueryr v1.x and Boostrap v3.x"
@@ -1057,7 +1057,7 @@
                     title="Bootstrap Slider Built with jQueryr v1.x and Boostrap v3.x">
                     Bootstrap Slider Built with jQueryr v1.x and Boostrap v3.x</a></h2>
               </div>
-              <div class="sample-item other " data-category="other">
+              <div class="sample-item other " data-framework="other">
                 <div class="sample">
                   <div class="sample-img"><a class="sample-link" title="SPFx Sample with Handlebars.js"
                       href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/handlebarsjs-webpack-loader">
@@ -1075,7 +1075,7 @@
                     title="SPFx Sample with Handlebars.js">
                     SPFx Sample with Handlebars.js</a></h2>
               </div>
-              <div class="sample-item jquery " data-category="jquery">
+              <div class="sample-item jquery " data-framework="jquery">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Using jQuery loaded from CDN"
@@ -1096,7 +1096,7 @@
                     Using jQuery loaded from CDN</a></h2>
               </div>
 
-              <div class="sample-item jquery " data-category="jquery">
+              <div class="sample-item jquery " data-framework="jquery">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="JQuery, Photopile.JS & Office UI Fabric Client-Side Web Part"
@@ -1117,7 +1117,7 @@
                     JQuery, Photopile.JS & Office UI Fabric Client-Side Web Part</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Display List JavaScript Client-Side Web Part"
@@ -1138,7 +1138,7 @@
                     Display List JavaScript Client-Side Web Part</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Dynamic Bundling & Loading of SPFx Packages"
@@ -1159,7 +1159,7 @@
                     Dynamic Bundling & Loading of SPFx Packages</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Display Employee Spotlight JavaScript Client-Side Web Part"
@@ -1179,7 +1179,7 @@
                     title="Display Employee Spotlight JavaScript Client-Side Web Part">
                     Display Employee Spotlight JavaScript Client-Side Web Part</a></h2>
               </div>
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Integrating custom gulp tasks to SharePoint Framwork toolchain"
@@ -1199,7 +1199,7 @@
                     Integrating custom gulp tasks to SharePoint Framwork toolchain</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img" title="Extending webpack in the SharePoint Framework toolchain">
                     <a class="sample-link"
@@ -1220,7 +1220,7 @@
                     Extending webpack in the SharePoint Framework toolchain</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="GitHub Badge"
@@ -1240,7 +1240,7 @@
                     title="GitHub Badge">
                     GitHub Badge</a></h2>
               </div>
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Modern Calendar"
@@ -1261,7 +1261,7 @@
                     Modern Calendar</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="SPFx My Flows Web Part"
@@ -1282,7 +1282,7 @@
                     SPFx My Flows Web Part</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Embed a PowerBI report in a Client-Side Web Part"
@@ -1303,7 +1303,7 @@
                     Embed a PowerBI report in a Client-Side Web Part</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="JS Property Controls SVG"
@@ -1324,7 +1324,7 @@
                     JS Property Controls SVG</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Public teams I'm not a member of"
@@ -1344,7 +1344,7 @@
                     title="Public teams I'm not a member of">
                     Public teams I'm not a member of</a></h2>
               </div>
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="JavaScript Skype Status WebPart"
@@ -1364,7 +1364,7 @@
                     title="JavaScript Skype Status WebPart">
                     JavaScript Skype Status WebPart</a></h2>
               </div>
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Handling Multiple Editions of SPFx Solution"
@@ -1383,7 +1383,7 @@
                     title="Handling Multiple Editions of SPFx Solution">
                     Handling Multiple Editions of SPFx Solution</a></h2>
               </div>
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Modern Experience Theme Manager 2019"
@@ -1404,7 +1404,7 @@
                     title="Modern Experience Theme Manager 2019">
                     Modern Experience Theme Manager 2019</a></h2>
               </div>
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Modern Experience Theme Manager"
@@ -1425,7 +1425,7 @@
                     Modern Experience Theme Manager</a></h2>
               </div>
 
-              <div class="sample-item js " data-category="js">
+              <div class="sample-item js " data-framework="js">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Workbench customizer"
@@ -1445,7 +1445,7 @@
                     title="Workbench customizer">
                     Workbench customizer</a></h2>
               </div>
-              <div class="sample-item knockout " data-category="knockout">
+              <div class="sample-item knockout " data-framework="knockout">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Knockout Dependent Properties"
@@ -1465,7 +1465,7 @@
                     title="Knockout Dependent Properties">
                     Knockout Dependent Properties</a></h2>
               </div>
-              <div class="sample-item knockout " data-category="knockout">
+              <div class="sample-item knockout " data-framework="knockout">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Sample showing the use of @pnp/sp library with Knockoutjs"
@@ -1486,7 +1486,7 @@
                     Sample showing the use of @pnp/sp library with Knockoutjs</a></h2>
               </div>
 
-              <div class="sample-item knockout " data-category="knockout">
+              <div class="sample-item knockout " data-framework="knockout">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Taxonomy Web Part"
@@ -1507,7 +1507,7 @@
                     Taxonomy Web Part</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="SharePoint Framework PnP Controls Sample"
@@ -1528,7 +1528,7 @@
                     SharePoint Framework PnP Controls Sample</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1550,7 +1550,7 @@
                     Consuming Third Party APIs secured with Azure Active Directory within SharePoint Framework</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Azure Active Directory implicit flow authentication samples"
@@ -1571,7 +1571,7 @@
                     Azure Active Directory implicit flow authentication samples</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1593,7 +1593,7 @@
                     Call custom Web API secured with AAD from SharePoint Framework client-side web part</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Using React Accordion plugin with SPFx"
@@ -1614,7 +1614,7 @@
                     Using React Accordion plugin with SPFx</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Image Gallery Web Part Built with Adaptive Cards"
@@ -1635,7 +1635,7 @@
                     Image Gallery Web Part Built with Adaptive Cards</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="React Aggregated Calendar Webpart"
@@ -1656,7 +1656,7 @@
                     React Aggregated Calendar Webpart</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1678,7 +1678,7 @@
                     SPFx React app settings webpart</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1700,7 +1700,7 @@
                     React sample showing the use of @pnp/js with Async / Await</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1720,7 +1720,7 @@
                     title="Local Azure Function and SPFx Web Part Development to consume third party APIs">
                     Local Azure Function and SPFx Web Part Development to consume third party APIs</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1742,7 +1742,7 @@
                     React Birthdays Web Part</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1763,7 +1763,7 @@
                     title="Microsoft Bot Framework Web Chat">
                     Microsoft Bot Framework Web Chat</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1785,7 +1785,7 @@
                     React Calendar Feed Web Part</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1806,7 +1806,7 @@
                     title="React Calendar">
                     React Calendar</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1828,7 +1828,7 @@
                     React Carousel Web Part</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1849,7 +1849,7 @@
                     title="React Chart Control Samples">
                     React Chart Control Samples</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1870,7 +1870,7 @@
                     title="React Comparer with File Picker">
                     React Comparer with File Picker</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1892,7 +1892,7 @@
                     Code Splitting in SharePoint Framework</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1913,7 +1913,7 @@
                     title="React Content Query WebPart">
                     React Content Query WebPart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1934,7 +1934,7 @@
                     title="Custom property pane controls built in React">
                     Custom property pane controls built in React</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1955,7 +1955,7 @@
                     Design Patterns applied to Sharepoint Framework</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1977,7 +1977,7 @@
                     React Directory Web Part</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -1998,7 +1998,7 @@
                     title="Web part displaying hierarchical information from SharePoint list">
                     Web part displaying hierarchical information from SharePoint list</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2019,7 +2019,7 @@
                     title="Documents Web Part">
                     Documents Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2041,7 +2041,7 @@
                     title="SPFx Event Aggregator Sample">
                     SPFx Event Aggregator Sample</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2063,7 +2063,7 @@
                     Dynamic data</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2085,7 +2085,7 @@
                     SharePoint Framework Facebook Page Social Plugin web part sample</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2106,7 +2106,7 @@
                     title="Deployment of SharePoint assets as part of SPFx package">
                     Deployment of SharePoint assets as part of SPFx package</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2128,7 +2128,7 @@
                     React File Upload WebPart</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2149,7 +2149,7 @@
                     title="React Functional Component web part with data fetch">
                     React Functional Component web part with data fetch</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2170,7 +2170,7 @@
                     title="React Functional Component web part">
                     React Functional Component web part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2191,7 +2191,7 @@
                     title="React Functional Stateful Component web part">
                     React Functional Stateful Component web part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2212,7 +2212,7 @@
                     title="React GitHub Badge">
                     React GitHub Badge</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2233,7 +2233,7 @@
                     title="Web part displaying Google Fit information">
                     Web part displaying Google Fit information</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2254,7 +2254,7 @@
                     title="Webpart showing Url validation for SharePoint using Office Graph">
                     Webpart showing Url validation for SharePoint using Office Graph</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2275,7 +2275,7 @@
                     title="Feedback Form">
                     Feedback Form</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2296,7 +2296,7 @@
                     title="Personal e-mail">
                     Personal e-mail</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2317,7 +2317,7 @@
                     title="React sample showing the use of PnPJS with MS Graph">
                     React sample showing the use of PnPJS with MS Graph</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2338,7 +2338,7 @@
                     title="React Graph Reports">
                     React Graph Reports</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2359,7 +2359,7 @@
                     title="Spfx Webpart read / update MS Graph Custom Schema Extensions">
                     Spfx Webpart read / update MS Graph Custom Schema Extensions</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2380,7 +2380,7 @@
                     title="React Hooks Form WebPart">
                     React Hooks Form WebPart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2401,7 +2401,7 @@
                     title="Filterable Image Gallery Web Part">
                     Filterable Image Gallery Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2422,7 +2422,7 @@
                     title="Image Magnifier">
                     Image Magnifier</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2443,7 +2443,7 @@
                     title="Image Slider from Photo Gallery using Taxonomy Filter">
                     Image Slider from Photo Gallery using Taxonomy Filter</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2464,7 +2464,7 @@
                     title="Azure Active Directory invitation manager Graph API samples">
                     Azure Active Directory invitation manager Graph API samples</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2485,7 +2485,7 @@
                     title="React Inversion Of Control Web Part with Unit Tests using Jest and Enzyme">
                     React Inversion Of Control Web Part with Unit Tests using Jest and Enzyme</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2506,7 +2506,7 @@
                     title="React Item History">
                     React Item History</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2527,7 +2527,7 @@
                     title="SharePoint Framework React Jest Testing sample">
                     SharePoint Framework React Jest Testing sample</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2548,7 +2548,7 @@
                     title="React Kanban Board Webpart">
                     React Kanban Board Webpart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2569,7 +2569,7 @@
                     title="React List Form WebPart">
                     React List Form WebPart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2590,7 +2590,7 @@
                     title="React Site Designs Manager">
                     React Site Designs Manager</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2611,7 +2611,7 @@
                     title="React Material UI">
                     React Material UI</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2632,7 +2632,7 @@
                     title="Webpart with React and Mobx using multiple stores">
                     Webpart with React and Mobx using multiple stores</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2653,7 +2653,7 @@
                     title="Webpart with React and Mobx">
                     Webpart with React and Mobx</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2674,7 +2674,7 @@
                     title="Modern Charts">
                     Modern Charts</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2695,7 +2695,7 @@
                     title="Microsoft Authentication Library (MSAL JS) authentication sample">
                     Microsoft Authentication Library (MSAL JS) authentication sample</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2716,7 +2716,7 @@
                     title="SPFX React Grid">
                     SPFX React Grid</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2738,7 +2738,7 @@
                     title="React Image Gallery">
                     React Image Gallery</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2759,7 +2759,7 @@
                     title="React multi-page client-side web part">
                     React multi-page client-side web part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2780,7 +2780,7 @@
                     title="SharePoint Framework React multi screen web part sample">
                     SharePoint Framework React multi screen web part sample</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2801,7 +2801,7 @@
                     title="React My Teams">
                     React My Teams</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2823,7 +2823,7 @@
                     React & Office Graph Web Part samples</a></h2>
               </div>
 
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2844,7 +2844,7 @@
                     title="Offline First React Webpart built using LocalForage, Whatwg-Fetch, ES6-Promise">
                     Offline First React Webpart built using LocalForage, Whatwg-Fetch, ES6-Promise</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2865,7 +2865,7 @@
                     title="Organisation Chart">
                     Organisation Chart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2886,7 +2886,7 @@
                     title="React Page Navigator">
                     React Page Navigator</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2907,7 +2907,7 @@
                     title="Page Sections Navigation">
                     Page Sections Navigation</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2928,7 +2928,7 @@
                     title="Page Contributors Web Part">
                     Page Contributors Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2949,7 +2949,7 @@
                     title="People Picker (React)">
                     People Picker (React)</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2970,7 +2970,7 @@
                     title="React Project Online">
                     React Project Online</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -2991,7 +2991,7 @@
                     title="Property Bag Navigation Webparts">
                     Property Bag Navigation Webparts</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3012,7 +3012,7 @@
                     title="Provision SharePoint Assets with the SPFx solution package">
                     Provision SharePoint Assets with the SPFx solution package</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3033,7 +3033,7 @@
                     title="Real Time News Feed using Azure Logic Apps, Node.js and socket.io">
                     Real Time News Feed using Azure Logic Apps, Node.js and socket.io</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3054,7 +3054,7 @@
                     title="List subscription">
                     List subscription</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3075,7 +3075,7 @@
                     title="SharePoint Framework webpart sample using React, Redux and ImmutableJS">
                     SharePoint Framework webpart sample using React, Redux and ImmutableJS</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3096,7 +3096,7 @@
                     title="Webpart with React and Redux">
                     Webpart with React and Redux</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3117,7 +3117,7 @@
                     title="SPFx webpart using Redux-Form library and React">
                     SPFx webpart using Redux-Form library and React</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3138,7 +3138,7 @@
                     title="SharePoint Framework RSS Reader">
                     SharePoint Framework RSS Reader</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3159,7 +3159,7 @@
                     title="SPFx ReactiveX (RxJs) Event Emitter Sample">
                     SPFx ReactiveX (RxJs) Event Emitter Sample</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3180,7 +3180,7 @@
                     title="Script editor web part for modern pages built in React">
                     Script editor web part for modern pages built in React</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3201,7 +3201,7 @@
                     title="Search Client-Side Web Part built with React and Flux">
                     Search Client-Side Web Part built with React and Flux</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3222,7 +3222,7 @@
                     title="SPFX React Grid">
                     SPFX React Grid</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3243,7 +3243,7 @@
                     title="React Side Panel Client-Side Web Part">
                     React Side Panel Client-Side Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3264,7 +3264,7 @@
                     title="Site Provisioning Manager Web Part">
                     Site Provisioning Manager Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3285,7 +3285,7 @@
                     title="React Sitepages Metadata">
                     React Sitepages Metadata</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3306,7 +3306,7 @@
                     title="React Skype Status WebPart">
                     React Skype Status WebPart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3327,7 +3327,7 @@
                     title="SPFx React Slide Swiper">
                     SPFx React Slide Swiper</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3348,7 +3348,7 @@
                     title="Communicate using elevated privileges with SharePoint">
                     Communicate using elevated privileges with SharePoint</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3369,7 +3369,7 @@
                     React sample showing the use of PnP JS Core custom objects with @select and @expand decorators</a>
                 </h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3390,7 +3390,7 @@
                     title="SPFx webpart with Taxonomy picker Office UI Fabric Panel">
                     SPFx webpart with Taxonomy picker Office UI Fabric Panel</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3411,7 +3411,7 @@
                     title="Taxonomy Picker (React)">
                     Taxonomy Picker (React)</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3432,7 +3432,7 @@
                     title="React Teams Creator Web Part">
                     React Teams Creator Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3453,7 +3453,7 @@
                     title="Teams Tab - Field Visit Demo (Mashup)">
                     Teams Tab - Field Visit Demo (Mashup)</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3474,7 +3474,7 @@
                     title="Spfx Webpart / Teams tab Group members suggestion">
                     Spfx Webpart / Teams tab Group members suggestion</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3495,7 +3495,7 @@
                     title="SPFx webpart to Tag Teams using a TermSet in SharePoint">
                     SPFx webpart to Tag Teams using a TermSet in SharePoint</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3516,7 +3516,7 @@
                     title="React Tenant Properties Web Part">
                     React Tenant Properties Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3537,7 +3537,7 @@
                     title="SharePoint Themes Client Side Web Part">
                     SharePoint Themes Client Side Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3558,7 +3558,7 @@
                     title="React TinyMCE Editor WebPart Integration with SharePoint">
                     React TinyMCE Editor WebPart Integration with SharePoint</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3579,7 +3579,7 @@
                     title="React Todo Basic">
                     React Todo Basic</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3600,7 +3600,7 @@
                     title="React Tree Organization Web Part">
                     React Tree Organization Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3621,7 +3621,7 @@
                     title="React Video Library">
                     React Video Library</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3642,7 +3642,7 @@
                     title="React Visio Embed">
                     React Visio Embed</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3663,7 +3663,7 @@
                     title="SPFx Web/Mobile Camera Demo">
                     SPFx Web/Mobile Camera Demo</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3684,7 +3684,7 @@
                     title="Webhooks Realtime">
                     Webhooks Realtime</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3705,7 +3705,7 @@
                     title="Yammer REST API SPFx webpart">
                     Yammer REST API SPFx webpart</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3726,7 +3726,7 @@
                     title="Youtube Web Part">
                     Youtube Web Part</a></h2>
               </div>
-              <div class="sample-item other " data-category="other">
+              <div class="sample-item other " data-framework="other">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3747,7 +3747,7 @@
                     title="List RiotJS Client-Side Web Part">
                     List RiotJS Client-Side Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3768,7 +3768,7 @@
                     title="Supporting section backgrounds in your web parts">
                     Supporting section backgrounds in your web parts</a></h2>
               </div>
-              <div class="sample-item react " data-category="react">
+              <div class="sample-item react " data-framework="react">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3789,7 +3789,7 @@
                     title="SharePoint CRUD operations">
                     SharePoint CRUD operations</a></h2>
               </div>
-              <div class="sample-item vue " data-category="vue">
+              <div class="sample-item vue " data-framework="vue">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
@@ -3811,7 +3811,7 @@
                     VueJS Org Chart</a></h2>
               </div>
 
-              <div class="sample-item vue " data-category="vue">
+              <div class="sample-item vue " data-framework="vue">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
