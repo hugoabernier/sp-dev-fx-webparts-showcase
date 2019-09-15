@@ -40,143 +40,188 @@
   </style>
   <!-- START filter -->
   <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  * { box-sizing: border-box; }
+    body {
+      font-family: sans-serif;
+    }
 
-  body {
-    font-family: sans-serif;
-  }
-  
-  /* ---- button ---- */
-  
-  .button {
-    display: inline-block;
-    padding: 10px 18px;
-    margin-bottom: 10px;
-    background: #EEE;
-    border: none;
-    /*border-radius: 7px;
+    /* ---- button ---- */
+
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      margin-bottom: 10px;
+      background: #EEE;
+      border: none;
+      /*border-radius: 7px;
     background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
-    color: #222;
-    font-family: sans-serif;
-    font-size: 16px;
-    text-shadow: 0 1px white;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #ff9100;
-    /*text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);*/
-    color: #222;
-  }
-  
-  .button:active,
-  .button.is-checked {
-    background-color: #ff7043;
-  }
-  
-  .button.is-checked {
-    color: white;
-    /*text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);*/
-  }
-  
-  .button:active {
-    /*box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);*/
-  }
-  
-  /* ---- button-group ---- */
-  
-  .button-group:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  
-  .button-group .button {
-    float: left;
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 1px;
-  }
-  
-  .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-  .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-  
-  /* ---- isotope ---- */
-  
-  .grid {
-    border: 1px solid #333;
-  }
-  
-  /* clear fix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  
-  /* ---- .element-item ---- */
-  
-  .element-item {
-    position: relative;
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    padding: 10px;
-    background: #888;
-    color: #262524;
-  }
-  
-  .element-item > * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .element-item .name {
-    position: absolute;
-  
-    left: 10px;
-    top: 60px;
-    text-transform: none;
-    letter-spacing: 0;
-    font-size: 12px;
-    font-weight: normal;
-  }
-  
-  .element-item .symbol {
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 42px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .element-item .number {
-    position: absolute;
-    right: 8px;
-    top: 5px;
-  }
-  
-  .element-item .weight {
-    position: absolute;
-    left: 10px;
-    top: 76px;
-    font-size: 12px;
-  }
-  
-  .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-  .element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-  .element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-  .element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-  .element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-  .element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-  .element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-  .element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
-  .element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-  .element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
-</style>
+      color: #222;
+      font-family: sans-serif;
+      font-size: 16px;
+      text-shadow: 0 1px white;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #ff9100;
+      /*text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);*/
+      color: #222;
+    }
+
+    .button:active,
+    .button.is-checked {
+      background-color: #ff7043;
+    }
+
+    .button.is-checked {
+      color: white;
+      /*text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);*/
+    }
+
+    .button:active {
+      /*box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);*/
+    }
+
+    /* ---- button-group ---- */
+
+    .button-group:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .button-group .button {
+      float: left;
+      border-radius: 0;
+      margin-left: 0;
+      margin-right: 1px;
+    }
+
+    .button-group .button:first-child {
+      border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .button-group .button:last-child {
+      border-radius: 0 0.5em 0.5em 0;
+    }
+
+    /* ---- isotope ---- */
+
+    .grid {
+      border: 1px solid #333;
+    }
+
+    /* clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* ---- .element-item ---- */
+
+    .element-item {
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      padding: 10px;
+      background: #888;
+      color: #262524;
+    }
+
+    .element-item>* {
+      margin: 0;
+      padding: 0;
+    }
+
+    .element-item .name {
+      position: absolute;
+
+      left: 10px;
+      top: 60px;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .element-item .symbol {
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .element-item .number {
+      position: absolute;
+      right: 8px;
+      top: 5px;
+    }
+
+    .element-item .weight {
+      position: absolute;
+      left: 10px;
+      top: 76px;
+      font-size: 12px;
+    }
+
+    .element-item.alkali {
+      background: #F00;
+      background: hsl(0, 100%, 50%);
+    }
+
+    .element-item.alkaline-earth {
+      background: #F80;
+      background: hsl(36, 100%, 50%);
+    }
+
+    .element-item.lanthanoid {
+      background: #FF0;
+      background: hsl(72, 100%, 50%);
+    }
+
+    .element-item.actinoid {
+      background: #0F0;
+      background: hsl(108, 100%, 50%);
+    }
+
+    .element-item.transition {
+      background: #0F8;
+      background: hsl(144, 100%, 50%);
+    }
+
+    .element-item.post-transition {
+      background: #0FF;
+      background: hsl(180, 100%, 50%);
+    }
+
+    .element-item.metalloid {
+      background: #08F;
+      background: hsl(216, 100%, 50%);
+    }
+
+    .element-item.diatomic {
+      background: #00F;
+      background: hsl(252, 100%, 50%);
+    }
+
+    .element-item.halogen {
+      background: #F0F;
+      background: hsl(288, 100%, 50%);
+    }
+
+    .element-item.noble-gas {
+      background: #F08;
+      background: hsl(324, 100%, 50%);
+    }
+  </style>
   <!-- END filter -->
   <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
   <link rel="stylesheet" href="../../css/extra.css">
@@ -214,8 +259,8 @@
     <nav class="md-header-nav md-grid">
       <div class="md-flex">
         <div class="md-flex__cell md-flex__cell--shrink">
-          <a href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/" title="SharePoint Framework Client-Side Web Part Samples"
-            class="md-header-nav__button md-logo">
+          <a href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/"
+            title="SharePoint Framework Client-Side Web Part Samples" class="md-header-nav__button md-logo">
 
             <img src="../../img/pnp-samples-white.svg" width="24" height="24">
 
@@ -373,426 +418,379 @@
                         Samples
                       </label>
                       <ul class="md-nav__list" data-md-scrollfix>
-                        
-                        
-                          
-                          
-                          
-                
-                  
-                
-                
-                  <li class="md-nav__item md-nav__item--active">
-                    
-                    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-                    
-                      
-                    
-                    
-                      <label class="md-nav__link md-nav__link--active" for="__toc">
-                        By Column Type
-                      </label>
-                    
-                    <a href="./" title="By Column Type" class="md-nav__link md-nav__link--active">
-                      By Column Type
-                    </a>
-                    
-                      
-                <nav class="md-nav md-nav--secondary">
-                  
-                  
-                    
-                  
-                  
-                    <label class="md-nav__title" for="__toc">Table of contents</label>
-                    <ul class="md-nav__list" data-md-scrollfix>
-                      
+                        <li class="md-nav__item md-nav__item--active">
+                          <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+                          <label class="md-nav__link md-nav__link--active" for="__toc">
+                            By Framework
+                          </label>
+                          <a href="./" title="By Framework" class="md-nav__link md-nav__link--active">
+                            By Framework
+                          </a>
+                          <nav class="md-nav md-nav--secondary">
+                            <label class="md-nav__title" for="__toc">Table of contents</label>
+                            <ul class="md-nav__list" data-md-scrollfix>
+                              <li class="md-nav__item">
+                                <a href="#contenttype" title="ContentType" class="md-nav__link">
+                                  ContentType
+                                </a>
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#currency" title="Currency" class="md-nav__link">
+                                  Currency
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_1" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#datetime" title="Date/Time" class="md-nav__link">
+                                  Date/Time
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_2" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#general-text-choice-other" title="General (Text, Choice, Other)"
+                                  class="md-nav__link">
+                                  General (Text, Choice, Other)
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_1" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_3" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#hyperlink" title="Hyperlink" class="md-nav__link">
+                                  Hyperlink
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_4" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#location" title="Location" class="md-nav__link">
+                                  Location
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_2" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_5" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#multi-choice" title="Multi-Choice" class="md-nav__link">
+                                  Multi-Choice
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_3" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_6" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#multi-person" title="Multi-Person" class="md-nav__link">
+                                  Multi-Person
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_4" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_7" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#number" title="Number" class="md-nav__link">
+                                  Number
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_5" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_8" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#person" title="Person" class="md-nav__link">
+                                  Person
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_6" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_9" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#picture" title="Picture" class="md-nav__link">
+                                  Picture
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_7" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_10" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+                              <li class="md-nav__item">
+                                <a href="#yesno" title="Yes/No" class="md-nav__link">
+                                  Yes/No
+                                </a>
+
+                                <nav class="md-nav">
+                                  <ul class="md-nav__list">
+
+                                    <li class="md-nav__item">
+                                      <a href="#column-samples_8" title="Column Samples" class="md-nav__link">
+                                        Column Samples
+                                      </a>
+
+                                    </li>
+
+                                    <li class="md-nav__item">
+                                      <a href="#view-samples_11" title="View Samples" class="md-nav__link">
+                                        View Samples
+                                      </a>
+
+                                    </li>
+
+                                  </ul>
+                                </nav>
+
+                              </li>
+
+
+
+
+
+                            </ul>
+
+                          </nav>
+
+                        </li>
+
                         <li class="md-nav__item">
-                  <a href="#contenttype" title="ContentType" class="md-nav__link">
-                    ContentType
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
+                          <a href="../operator/" title="By SPFx Version" class="md-nav__link">
+                            By SPFx Version
+                          </a>
+                        </li>
+
+
                         <li class="md-nav__item">
-                  <a href="#currency" title="Currency" class="md-nav__link">
-                    Currency
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_1" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
+                          <a href="../token/" title="By SharePoint Version" class="md-nav__link">
+                            By SharePoint Version
+                          </a>
+                        </li>
+
+
+
+
+
+
+
                         <li class="md-nav__item">
-                  <a href="#datetime" title="Date/Time" class="md-nav__link">
-                    Date/Time
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_2" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
+                          <a href="../action/" title="By Build Status" class="md-nav__link">
+                            By Build Status
+                          </a>
+                        </li>
+
+
+
+
+
+
+
                         <li class="md-nav__item">
-                  <a href="#general-text-choice-other" title="General (Text, Choice, Other)" class="md-nav__link">
-                    General (Text, Choice, Other)
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_1" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_3" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
+                          <a href="../category/" title="By Category" class="md-nav__link">
+                            By Category
+                          </a>
+                        </li>
+
+
+
+
+
+
+
                         <li class="md-nav__item">
-                  <a href="#hyperlink" title="Hyperlink" class="md-nav__link">
-                    Hyperlink
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_4" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#location" title="Location" class="md-nav__link">
-                    Location
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_2" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_5" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#multi-choice" title="Multi-Choice" class="md-nav__link">
-                    Multi-Choice
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_3" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_6" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#multi-person" title="Multi-Person" class="md-nav__link">
-                    Multi-Person
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_4" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_7" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#number" title="Number" class="md-nav__link">
-                    Number
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_5" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_8" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#person" title="Person" class="md-nav__link">
-                    Person
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_6" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_9" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#picture" title="Picture" class="md-nav__link">
-                    Picture
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_7" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_10" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                        <li class="md-nav__item">
-                  <a href="#yesno" title="Yes/No" class="md-nav__link">
-                    Yes/No
-                  </a>
-                  
-                    <nav class="md-nav">
-                      <ul class="md-nav__list">
-                        
-                          <li class="md-nav__item">
-                  <a href="#column-samples_8" title="Column Samples" class="md-nav__link">
-                    Column Samples
-                  </a>
-                  
-                </li>
-                        
-                          <li class="md-nav__item">
-                  <a href="#view-samples_11" title="View Samples" class="md-nav__link">
-                    View Samples
-                  </a>
-                  
-                </li>
-                        
-                      </ul>
-                    </nav>
-                  
-                </li>
-                      
-                      
-                      
-                      
-                      
-                    </ul>
-                  
-                </nav>
-                    
-                  </li>
-                
-                        
-                          
-                          
-                          
-                
-                
-                  <li class="md-nav__item">
-                    <a href="../operator/" title="By Operator" class="md-nav__link">
-                      By Operator
-                    </a>
-                  </li>
-                
-                        
-                          
-                          
-                          
-                
-                
-                  <li class="md-nav__item">
-                    <a href="../token/" title="By Placeholder Token" class="md-nav__link">
-                      By Placeholder Token
-                    </a>
-                  </li>
-                
-                        
-                          
-                          
-                          
-                
-                
-                  <li class="md-nav__item">
-                    <a href="../action/" title="By Row Action" class="md-nav__link">
-                      By Row Action
-                    </a>
-                  </li>
-                
-                        
-                          
-                          
-                          
-                
-                
-                  <li class="md-nav__item">
-                    <a href="../category/" title="By Category" class="md-nav__link">
-                      By Category
-                    </a>
-                  </li>
-                
-                        
-                          
-                          
-                          
-                
-                
-                  <li class="md-nav__item">
-                    <a href="../author/" title="By Author" class="md-nav__link">
-                      By Author
-                    </a>
-                  </li>
-                
-                        
-                          
-                          
-                          
-                
-                
-                  <li class="md-nav__item">
-                    <a href="../SP2019/" title="SharePoint 2019" class="md-nav__link">
-                      SharePoint 2019
-                    </a>
-                  </li>
-                
-                        
+                          <a href="../author/" title="By Author" class="md-nav__link">
+                            By Author
+                          </a>
+                        </li>
+
                       </ul>
                     </nav>
                   </li>
@@ -907,16 +905,16 @@
           <div class="md-sidebar__scrollwrap">
             <div class="md-sidebar__inner">
 
-             
+
             </div>
           </div>
         </div>
 
         <div class="md-content">
           <article class="md-content__inner md-typeset">
-            
+
             <!-- START Filter -->
-            
+
             <div class="button-group filters-button-group">
               <button class="button is-checked" data-filter="*">Show all</button>
               <button class="button" data-filter=".angular">Angular</button>
@@ -927,7 +925,7 @@
               <button class="button" data-filter=".vue">Vue</button>
               <button class="button" data-filter=".other">Other</button>
             </div>
-            
+
             <div class="grid">
               <div class="element-item angular metal " data-category="angular">
                 <h3 class="name">Mercury</h3>
@@ -1038,7 +1036,7 @@
                 <p class="weight">(244)</p>
               </div>
             </div>
-            
+
 
             <!-- END Filter -->
           </article>
@@ -1072,40 +1070,40 @@
   <script src="../../assets/javascripts/isotope.pkgd.min.js"></script>
   <script>app.initialize({ version: "1.0.1", url: { base: "../.." } })</script>
   <script>
-    
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  layoutMode: 'fitRows'
-});
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
-  }
-};
-// bind filter button click
-$('.filters-button-group').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
-});
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
-});
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows'
+    });
+    // filter functions
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function () {
+        var number = $(this).find('.number').text();
+        return parseInt(number, 10) > 50;
+      },
+      // show if name ends with -ium
+      ium: function () {
+        var name = $(this).find('.name').text();
+        return name.match(/ium$/);
+      }
+    };
+    // bind filter button click
+    $('.filters-button-group').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[filterValue] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
 
   </script>
 </body>
