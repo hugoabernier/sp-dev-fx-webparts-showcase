@@ -165,23 +165,23 @@ button[data-md-color-primary="cyan"] {
 [data-md-color-primary="cyan"] .md-nav__item--nested > .md-nav__link {
   color: inherit; }
 
-button[data-md-color-primary="teal"] {
+button[data-md-color-primary="deep orange"] {
   background-color: #009688; }
 
-[data-md-color-primary="teal"] .md-typeset a {
+[data-md-color-primary="deep orange"] .md-typeset a {
   color: #009688; }
 
-[data-md-color-primary="teal"] .md-header {
+[data-md-color-primary="deep orange"] .md-header {
   background-color: #009688; }
 
-[data-md-color-primary="teal"] .md-hero {
+[data-md-color-primary="deep orange"] .md-hero {
   background-color: #009688; }
 
-[data-md-color-primary="teal"] .md-nav__link:active,
-[data-md-color-primary="teal"] .md-nav__link--active {
+[data-md-color-primary="deep orange"] .md-nav__link:active,
+[data-md-color-primary="deep orange"] .md-nav__link--active {
   color: #009688; }
 
-[data-md-color-primary="teal"] .md-nav__item--nested > .md-nav__link {
+[data-md-color-primary="deep orange"] .md-nav__item--nested > .md-nav__link {
   color: inherit; }
 
 button[data-md-color-primary="green"] {
@@ -1046,7 +1046,7 @@ button[data-md-color-accent="deep-orange"] {
     background-color: rgba(2, 134, 194, 0.9675); }
   [data-md-color-primary="cyan"] .md-nav__source {
     background-color: rgba(0, 150, 169, 0.9675); }
-  [data-md-color-primary="teal"] .md-nav__source {
+  [data-md-color-primary="deep orange"] .md-nav__source {
     background-color: rgba(0, 119, 108, 0.9675); }
   [data-md-color-primary="green"] .md-nav__source {
     background-color: rgba(60, 139, 64, 0.9675); }
@@ -1089,7 +1089,7 @@ button[data-md-color-accent="deep-orange"] {
     background-color: #03a9f4; }
   html [data-md-color-primary="cyan"] .md-nav--primary .md-nav__title--site {
     background-color: #00bcd4; }
-  html [data-md-color-primary="teal"] .md-nav--primary .md-nav__title--site {
+  html [data-md-color-primary="deep orange"] .md-nav--primary .md-nav__title--site {
     background-color: #009688; }
   html [data-md-color-primary="green"] .md-nav--primary .md-nav__title--site {
     background-color: #4caf50; }
@@ -1134,7 +1134,7 @@ button[data-md-color-accent="deep-orange"] {
     background-color: #03a9f4; }
   [data-md-color-primary="cyan"] .md-tabs {
     background-color: #00bcd4; }
-  [data-md-color-primary="teal"] .md-tabs {
+  [data-md-color-primary="deep orange"] .md-tabs {
     background-color: #009688; }
   [data-md-color-primary="green"] .md-tabs {
     background-color: #4caf50; }
