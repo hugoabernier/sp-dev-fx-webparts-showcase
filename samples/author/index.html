@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="canonical" href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/samples/author/">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  <link rel="shortcut icon" href="../../assets/images/favicon.png">
+  <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
+
+  <title>SharePoint FrameWork client-side web part samples</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+  <meta name="theme-color" content="#009688">
+  <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+  <style>
+    body,
+    input {
+      font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+    }
+
+    code,
+    kbd,
+    pre {
+      font-family: "Roboto Mono", "Courier New", Courier, monospace
+    }
+  </style>
+  <!-- START filter -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    /* ---- button ---- */
+
+    .button {
+      display: inline-block;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      background: #EEE;
+      border: none;
+      /*border-radius: 7px;
+    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
+      color: #222;
+      /*font-family: sans-serif;*/
+      font-size: 14px;
+      /*text-shadow: 0 1px white;*/
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #ff9100;
+      /*text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);*/
+      color: white;
+    }
+
+    .button:active,
+    .button.is-checked {
+      background-color: #ff7043;
+    }
+
+    .button.is-checked {
+      color: white;
+      /*text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);*/
+    }
+
+    .button:active {
+      /*box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);*/
+    }
+
+    /* ---- button-group ---- */
+
+    .button-group:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .button-group .button {
+      float: left;
+      border-radius: 0;
+      margin-left: 2px;
+      margin-right: 2px;
+
+      padding: 10px 12px;
+      border-radius: 7px;
+    }
+
+    /*.button-group .button:first-child {
+      border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .button-group .button:last-child {
+      border-radius: 0 0.5em 0.5em 0;
+    }*/
+
+    /* ---- isotope ---- */
+
+    .grid {
+      /*border: 1px solid #333;*/
+    }
+
+    /* clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* ---- .sample-item ---- */
+
+    .sample-item {
+      position: relative;
+      float: left;
+      width: 220px;
+      height: 218px;
+      margin-bottom: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 0;
+      padding: 0;
+      background: #fff;
+      color: #262524;
+      /*border:1px solid rgb(50, 49, 48);*/
+      box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: box-shadow 0.5s ease 0s;
+      overflow: hidden;
+    }
+
+    .sample-item:hover {
+      box-shadow: rgba(0, 0, 0, 0.133) 0px 3.2px 7.2px 0px, rgba(0, 0, 0, 0.11) 0px 0.6px 1.8px 0px;
+    }
+
+    .sample-item>* {
+      margin: 0;
+      padding: 0;
+    }
+
+    .sample-item .author,
+    .sample-item .year,
+    .sample-item .drop,
+    .sample-item .status {
+      display: none;
+    }
+
+    .sample-item h2 {
+      /*max-height: 16px;*/
+      margin: 10px 0 0 0;
+      padding: 12px 12px 12px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.4;
+      color: #999;
+      vertical-align: middle;
+      width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sample-item h2 a,
+    .sample-item h2 a:link,
+    .sample-item h2 a:visited {
+      color: #333;
+
+    }
+
+    .sample-img {
+      min-height: 148px;
+      max-height: 148px;
+      overflow-y: hidden;
+      /*background-color: #999;*/
+    }
+  </style>
+  <!-- END filter -->
+  <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+  <link rel="stylesheet" href="../../css/extra.css">
+</head>
+
+<body dir="ltr" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+  <svg class="md-svg">
+    <defs>
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github">
+        <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+      </svg>
+    </defs>
+  </svg>
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="../../#samples-by-author" tabindex="1" class="md-skip">
+    Skip to content
+  </a>
+  <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+      <div class="md-flex">
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/"
+            title="SharePoint Framework Client-Side Web Part Samples" class="md-header-nav__button md-logo">
+            <img src="../../img/pnp-samples-white.svg" width="24" height="24">
+          </a>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+        </div>
+        <div class="md-flex__cell md-flex__cell--stretch">
+          <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+            <span class="md-header-nav__topic">
+              SharePoint Framework Client-Side Web Part Samples
+            </span>
+            <span class="md-header-nav__topic">
+              By Author
+            </span>
+          </div>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          <div class="md-search" data-md-component="search" role="dialog">
+            <label class="md-search__overlay" for="__search"></label>
+            <div class="md-search__inner" role="search">
+              <form class="md-search__form" name="search">
+                <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off"
+                  autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query"
+                  data-md-state="active">
+                <label class="md-icon md-search__icon" for="__search"></label>
+                <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+                  &#xE5CD;
+                </button>
+              </form>
+              <div class="md-search__output">
+                <div class="md-search__scrollwrap" data-md-scrollfix>
+                  <div class="md-search-result" data-md-component="result">
+                    <div class="md-search-result__meta">
+                      Type to start searching
+                    </div>
+                    <ol class="md-search-result__list"></ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <a href="https://github.com/SharePoint/sp-dev-fx-webparts/" title="Go to repository" class="md-source"
+              data-md-source="github">
+              <div class="md-source__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <use xlink:href="#__github" width="24" height="24"></use>
+                </svg>
+              </div>
+              <div class="md-source__repository">
+                GitHub
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <div class="md-container">
+    <nav class="md-tabs md-tabs--active" data-md-component="tabs">
+      <div class="md-tabs__inner md-grid">
+        <ul class="md-tabs__list">
+          <li class="md-tabs__item">
+            <a href="../.." title="Home" class="md-tabs__link">
+              Home
+            </a>
+          </li>
+          <li class="md-tabs__item">
+            <a href="../../gettingstarted/" title="Getting Started" class="md-tabs__link">
+              Getting Started
+            </a>
+          </li>
+
+          <li class="md-tabs__item">
+            <a href="./" title="Samples" class="md-tabs__link md-tabs__link--active">
+              Samples
+            </a>
+          </li>
+
+          <li class="md-tabs__item">
+            <a href="../../contributing/" title="Contributing" class="md-tabs__link">
+              Contributing
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+              <nav class="md-nav md-nav--primary" data-md-level="0">
+                <label class="md-nav__title md-nav__title--site" for="__drawer">
+                  <a href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/"
+                    title="SharePoint Framework Client-Side Web Part Samples" class="md-nav__button md-logo">
+                    <img src="../../img/pnp-samples-white.svg" width="48" height="48">
+                  </a>
+                  SharePoint Framework Client-Side Web Part Samples
+                </label>
+                <div class="md-nav__source">
+                  <a href="https://github.com/SharePoint/sp-dev-fx-webparts/" title="Go to repository" class="md-source"
+                    data-md-source="github">
+                    <div class="md-source__icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use xlink:href="#__github" width="24" height="24"></use>
+                      </svg>
+                    </div>
+                    <div class="md-source__repository">
+                      GitHub
+                    </div>
+                  </a>
+                </div>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  <li class="md-nav__item">
+                    <a href="../.." title="Home" class="md-nav__link">
+                      Home
+                    </a>
+                  </li>
+                  <li class="md-nav__item md-nav__item--nested">
+                    <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+                    <label class="md-nav__link" for="nav-2">
+                      Getting Started
+                    </label>
+                    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                      <label class="md-nav__title" for="nav-2">
+                        Getting Started
+                      </label>
+                      <ul class="md-nav__list" data-md-scrollfix>
+                        <li class="md-nav__item">
+                          <a href="../../gettingstarted/" title="Using the Samples" class="md-nav__link">
+                            Using the Samples
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+
+                  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+
+                    <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+
+                    <label class="md-nav__link" for="nav-5">
+                      Samples
+                    </label>
+                    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                      <label class="md-nav__title" for="nav-5">
+                        Samples
+                      </label>
+                      <ul class="md-nav__list" data-md-scrollfix>
+                        <li class="md-nav__item">
+
+                          <a href="../framework" title="By Framework" class="md-nav__link">
+                            By Framework
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../version/" title="By SPFx Version" class="md-nav__link">
+                            By SPFx Version
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../compatibility/" title="By Compatibility" class="md-nav__link">
+                            By Compatibility
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../year/" title="By Year" class="md-nav__link">
+                            By Year
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../status/" title="By Status" class="md-nav__link">
+                            By Status
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../category/" title="By Category" class="md-nav__link">
+                            By Category
+                          </a>
+                        </li>
+                        <li class="md-nav__item md-nav__item--active">
+                          <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+                          <label class="md-nav__link md-nav__link--active" for="__toc">
+                            By Author
+                          </label>
+                          <a href="./" title="By Author" class="md-nav__link md-nav__link--active">
+                            By Author
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                  <li class="md-nav__item md-nav__item--nested">
+                    <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+                    <label class="md-nav__link" for="nav-6">
+                      Contributing
+                    </label>
+                    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                      <label class="md-nav__title" for="nav-6">
+                        Contributing
+                      </label>
+                      <ul class="md-nav__list" data-md-scrollfix>
+                        <li class="md-nav__item">
+                          <a href="../../contributing/" title="Contribution Guide" class="md-nav__link">
+                            Contribution Guide
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../../contributing/issues/" title="Submitting an Issue or Suggestion"
+                            class="md-nav__link">
+                            Submitting an Issue or Suggestion
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../../contributing/forking/" title="Forking?" class="md-nav__link">
+                            Forking?
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../../contributing/sample/" title="Creating a Sample" class="md-nav__link">
+                            Creating a Sample
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../../contributing/pullrequest/" title="Submitting a Pull Request"
+                            class="md-nav__link">
+                            Submitting a Pull Request
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="../../contributing/docs/" title="Update the Docs" class="md-nav__link">
+                            Update the Docs
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="md-content">
+          <article class="md-content__inner md-typeset">
+            <h1 id="samples-by-column-type">Samples by Author<a class="headerlink" href="#samples-by-author"
+                title="Permanent link">&para;</a></h1>
+
+            <div class="admonition warning">
+              <p class="admonition-title">Not implemented</p>
+              <p>This function isn't implemented yet.</p>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="md-footer">
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          <div class="md-footer-copyright">
+            powered by
+            <a href="https://www.mkdocs.org">MkDocs</a>
+            and
+            <a href="https://squidfunk.github.io/mkdocs-material/">
+              Material for MkDocs</a>
+          </div>
+          <div class="md-footer-social">
+            <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+            <a href="https://twitter.com/officedevpnp" class="md-footer-social__link fa fa-twitter"></a>
+            <a href="https://www.youtube.com/playlist?list=PLR9nK3mnD-OXgMjDBdjWUTRia89oixBhx"
+              class="md-footer-social__link fa fa-youtube"></a>
+            <a href="https://aka.ms/sppnp" class="md-footer-social__link fa fa-link"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="../../assets/javascripts/application.583bbe55.js"></script>
+  <script src="../../assets/javascripts/isotope.pkgd.min.js"></script>
+  <script>app.initialize({ version: "1.0.1", url: { base: "../.." } })</script>
+  <script>
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.sample-item',
+      layoutMode: 'fitRows'
+    });
+    // filter functions
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function () {
+        var number = $(this).find('.number').text();
+        return parseInt(number, 10) > 50;
+      },
+      // show if name ends with -ium
+      ium: function () {
+        var name = $(this).find('.name').text();
+        return name.match(/ium$/);
+      }
+    };
+    // bind filter button click
+    $('.filters-button-group').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[filterValue] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+
+  </script>
+</body>
+
+</html>
