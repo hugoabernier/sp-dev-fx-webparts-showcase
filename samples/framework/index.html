@@ -530,6 +530,13 @@
               <button class="button" data-filter="[data-year='2016']">2016</button>
             </div>
 
+            <div class="button-group filters-button-group">
+              <button class="button is-checked" data-filter="*">All</button>
+              <button class="button" data-filter=":not([data-status])">Working</button>
+              <button class="button" data-filter="[data-status='Deprecated']">Deprecated</button>
+              <button class="button" data-filter="[data-status='Error']">Broken</button>
+            </div>
+
             <div class="grid">
               <div class="sample-item js " data-framework="angular" data-spfx="GA" data-year="2017">
                 <div class="sample">
@@ -640,7 +647,8 @@
                     title="File Upload using AngularJs">
                     File Upload using AngularJs</a></h2>
               </div>
-              <div class="sample-item angular  " data-framework="angular" data-spfx="drop2" data-year="2016">
+              <div class="sample-item angular  " data-framework="angular" data-spfx="drop2" data-year="2016"
+                data-status="Error">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link" title="Angular & ngOfficeUIFabric Client-Side Web Part"
@@ -1747,7 +1755,8 @@
                     title="Documents Web Part">
                     Documents Web Part</a></h2>
               </div>
-              <div class="sample-item react " data-framework="react" data-spfx="1.4.1" data-year="2018">
+              <div class="sample-item react " data-framework="react" data-spfx="1.4.1" data-year="2018"
+                data-status="Deprecated">
                 <div class="sample">
                   <div class="sample-img">
                     <a class="sample-link"
