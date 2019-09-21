@@ -36,7 +36,8 @@
   }
 
   .button.is-checked {
-    color: white;
+    /* color: white; */
+    color: #222;
   }
 
   /* ---- button-group ---- */
