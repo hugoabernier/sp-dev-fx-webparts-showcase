@@ -1,0 +1,2396 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/samples/allstatus/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Samples with Status - SharePoint Framework Client-Side Web Part Samples</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/filter.css">
+    
+      <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/10.0.0/css/fabric.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#samples-with-status" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/" title="SharePoint Framework Client-Side Web Part Samples" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/pnp-samples-white.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              SharePoint Framework Client-Side Web Part Samples
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Samples with Status
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/hugoabernier/sp-dev-fx-webparts-showcase/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../gettingstarted/" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/" class="md-tabs__link">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../framework/" class="md-tabs__link">
+          Samples
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../contributing/" class="md-tabs__link">
+          Contributing
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://hugoabernier.github.io/sp-dev-fx-webparts-showcase/" title="SharePoint Framework Client-Side Web Part Samples" class="md-nav__button md-logo">
+      
+        <img src="../../img/pnp-samples-white.svg" width="48" height="48">
+      
+    </a>
+    SharePoint Framework Client-Side Web Part Samples
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/hugoabernier/sp-dev-fx-webparts-showcase/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gettingstarted/" title="Using the Samples" class="md-nav__link">
+      Using the Samples
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/" title="Tutorials" class="md-nav__link">
+      Tutorials
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Samples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Samples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../framework/" title="By Framework" class="md-nav__link">
+      By Framework
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spfx/" title="By SPFx Version" class="md-nav__link">
+      By SPFx Version
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../compatibility/" title="By Compatibility" class="md-nav__link">
+      By Compatibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../year/" title="By Year" class="md-nav__link">
+      By Year
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../status/" title="By Status" class="md-nav__link">
+      By Status
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../all/" title="All" class="md-nav__link">
+      All
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Contributing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/" title="Contribution Guide" class="md-nav__link">
+      Contribution Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/issues/" title="Submitting an Issue or Suggestion" class="md-nav__link">
+      Submitting an Issue or Suggestion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/forking/" title="Forking?" class="md-nav__link">
+      Forking?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/sample/" title="Creating a Sample" class="md-nav__link">
+      Creating a Sample
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/pullrequest/" title="Submitting a Pull Request" class="md-nav__link">
+      Submitting a Pull Request
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/hugoabernier/sp-dev-fx-webparts-showcase/tree/master/docs/samples/allstatus.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="samples-with-status">Samples with Status<a class="headerlink" href="#samples-with-status" title="Permanent link">&para;</a></h1>
+<table id="samplestable" >
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Written by</th>
+            <th>SPFx</th>
+            <th>Framework</th>
+            <th>Modified</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+<tbody>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/aad-api-spo-cookie" target="_blank" title="Sample SharePoint Framework client-side web part showing how to access a custom API secured with Azure Active Directory (AAD) without using ADAL JS.">Call custom APIs secured with Azure Active Directory without ADAL JS</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Angular</td>
+        <td>May 5, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-aad-webapi" target="_blank" title="Sample SharePoint Framework client-side web part illustrating communication with a custom Web API secured with Azue Active Directory using Angular v1.x">Call custom Web API secured with AAD from SharePoint Framework client-side web part using Angular v1.x</a></td>
+        <td>David Hartman</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Angular</td>
+        <td>March 21, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-migration" target="_blank" title="This is a sample Angular application before and after it has been migrated to a SharePoint Framework client-side web part.">Migrating existing Angular applications to SharePoint Framework sample</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Angular</td>
+        <td>October 21, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-multipage" target="_blank" title="This is a sample SharePoint Framework client-side web part built using Angular, illustrating building multi-page web parts.">Angular multi-page client-side web part</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop5-red.svg" alt="drop5"/>
+
+        <td>Angular</td>
+        <td>November 1, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-ngofficeuifabric-file-upload" target="_blank" title="File Update/Delete webpart using AngularJs and ngOfficeUIFabric with the SharePoint Framework.">File Upload using AngularJs</a></td>
+        <td>Atish Kumar Dipongkor, Gautam Sheth</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Angular</td>
+        <td>July 19, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-ngofficeuifabric-todo" target="_blank" title="">Angular & ngOfficeUIFabric Client-Side Web Part</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop2-red.svg" alt="drop2"/>
+
+        <td>Angular</td>
+        <td>September 9, 2016</td>
+        <td><span title="">Incomplete</span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-search" target="_blank" title="This is a sample search web part that illustrates how you can use Angular within the new SharePoint Framework">Search Client-Side Web Part Built with Angular v1.x</a></td>
+        <td>David Hartman</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-rc0-green.svg" alt="rc0"/>
+
+        <td>Angular</td>
+        <td>February 4, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular-todo" target="_blank" title="Sample Web Part illustrating using Angular with the SharePoint Framework.">Angular client-side web part</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Angular</td>
+        <td>March 10, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angular2-prototype" target="_blank" title="Sample To Do Web Part built with Angular2. This sample illustrates how you can use Angular2 with the SharePoint Framework.">Angular2 Web Part Prototype</a></td>
+        <td>Manish Garg, Daniel Gaeta</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-rc0-green.svg" alt="rc0"/>
+
+        <td>Angular</td>
+        <td>January 20, 2017</td>
+        <td><span title="">Prototype</span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angularelements-helloworld" target="_blank" title="Set of sample web parts illustrating how to use Angular Elements in the SharePoint Framework.">Angular Elements in SharePoint Framework</a></td>
+        <td>Waldek Mastykarz, Sébastien Levert</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>Angular</td>
+        <td>June 1, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/angularelements-html-templatefile" target="_blank" title="A sample web part illustrating how to use Angular Elements in the SharePoint Framework with the help of separate template HTML File.">Angular Elements with HTML Template File in SharePoint Framework</a></td>
+        <td>Jayakumar Balasubramaniam</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>Angular</td>
+        <td>Jan 8, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/bootstrap-slider" target="_blank" title="Sample bootstrap slider which pulls the slides from a list inside the SharePoint site. The list is automatically deployed once the app is installed in the SharePoint site.">Bootstrap Slider Built with jQueryr v1.x and Boostrap v3.x</a></td>
+        <td>David Hartman</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Other</td>
+        <td>April 25, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/handlebarsjs-webpack-loader" target="_blank" title="This sample demonstrate how to set up SPFX to use Handlebars through webpack loader.">SPFx Sample with Handlebars.js</a></td>
+        <td>Stefan Bauer</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>Other</td>
+        <td>March 21, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/jquery-cdn" target="_blank" title="This is a sample web Part that illustrates the use of jQuery and its plugins loaded from CDN for building SharePoint Framework client-side web parts.">Using jQuery loaded from CDN</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop2-red.svg" alt="drop2"/>
+
+        <td>jQuery</td>
+        <td>September 16, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/jquery-photopile" target="_blank" title="This is a sample web part that illustrated the use of JQuery and Photopile.Js with the SharePoint Framework.">JQuery, Photopile.JS & Office UI Fabric Client-Side Web Part</a></td>
+        <td>Olivier Carpentier</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop1-red.svg" alt="drop1"/>
+
+        <td>jQuery</td>
+        <td>September 9, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-display-list" target="_blank" title="This simplistic sample Web Part demonstrates the use of JavaScript in a SharePoint Framework web part. The properties pane for this web part display a drop down list of lists in the current web. Once the user selects one of the lists, the web part display the contents of the list.">Display List JavaScript Client-Side Web Part</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Javascript</td>
+        <td>May 15, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-dynamic-bundling-libraries" target="_blank" title="This sample illustrates how SPFx functionality and packages can be bundled in multiple '.js' files then be dynamically & asynchronously loaded into the page at execution time, such as with a button click.">Dynamic Bundling & Loading of SPFx Packages</a></td>
+        <td>David Warner II</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>Javascript</td>
+        <td>December 3, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-employee-spotlight" target="_blank" title="Simple Web Part that demonstrates the use of SharePoint Framework for showcasing Employee Spotlight. The web part pulls data from a configured list and User Profile service. The properties pane for this web part has 5 cascading dropdowns.">Display Employee Spotlight JavaScript Client-Side Web Part</a></td>
+        <td>SPS</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Javascript</td>
+        <td>June 12, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-extend-gulp" target="_blank" title="SharePoint client-side development tools use gulp as the build process task runner to...">Integrating custom gulp tasks to SharePoint Framwork toolchain</a></td>
+        <td>Chakkaradeep Chandran</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-rc0-green.svg" alt="rc0"/>
+
+        <td>Javascript</td>
+        <td>January 25, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-extend-webpack" target="_blank" title="This sample shows how to use the webpack markdown-loader to preprocess markdown files to HTML string.">Extending webpack in the SharePoint Framework toolchain</a></td>
+        <td>Velin Georgiev, Chakkaradeep Chandran</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Javascript</td>
+        <td>January 25, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-gitHubBadge" target="_blank" title="">GitHub Badge</a></td>
+        <td>Eric Skaggs</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>Javascript</td>
+        <td>April 18, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-modern-calendar" target="_blank" title="This is a modern webpart built on the GA version of the SharePoint Framework demonstrating how to build a custom web part with a calendar capabilities in it.">Modern Calendar</a></td>
+        <td>Jeremy Coleman</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>Javascript</td>
+        <td>February 11, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-myflows" target="_blank" title="Manage current user flows in SharePoint or Teams Tab, this web part use the msflowsdk-1.1.js">SPFx My Flows Web Part</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>Javascript</td>
+        <td>August 13, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-powerbi-embedded" target="_blank" title="This sample SharePoint Framework client-side web part embedding a PowerBI report using PowerBI Embedded without any server-side code.">Embed a PowerBI report in a Client-Side Web Part</a></td>
+        <td>Roland Oldengarm</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop2-red.svg" alt="drop2"/>
+
+        <td>Javascript</td>
+        <td>September 13, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-propertycontrols-svg" target="_blank" title="An SPFx webpart that displays a Scalable Vector Graphics (SVG) image using properties to customize how it is rendered. The webpart utilizes the PnP SPFx Property Controls package (specifially the SpinButton and ColorPicker) to set these properties.">JS Property Controls SVG</a></td>
+        <td>Chris Kent</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.3.4-green.svg" alt="1.3.4"/>
+
+        <td>Javascript</td>
+        <td>November 12, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-public-unjoined-teams" target="_blank" title="This web part lists all the public teams the current user is not yet a member of. They can then join any of those teams by clicking the button right next to the team name. This web part can also be added to Teams as a tab (built with the 1.7.1 plusbeta/preview version).">Public teams I'm not a member of</a></td>
+        <td>Laura Kokkarinen</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>Javascript</td>
+        <td>February 5, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-skype-status" target="_blank" title="This sample demonstrates how to use the UCWA JS Sdk for skype in the SharePoint Framework. It shows how to subscribe to status change of the different people of the organization but you can get much more information, checkout the documentation">JavaScript Skype Status WebPart</a></td>
+        <td>Vincent Biret</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>Javascript</td>
+        <td>March 27, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-solution-editions" target="_blank" title="This sample shows possible approach of handling multiple editions (e.g. trial, lite, full) of SharePoint Framework solution.">Handling Multiple Editions of SPFx Solution</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Javascript</td>
+        <td>August 23, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-theme-manager-2019" target="_blank" title="This sample web part provides a user interface for applying a Modern Experience theme in SharePoint 2019 on-premises.">Modern Experience Theme Manager 2019</a></td>
+        <td>David Warner II, Beau Cameron, Biju Basheer, Eric Skaggs</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>Javascript</td>
+        <td>June 17, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-theme-manager" target="_blank" title="This sample web part provides a user interface for creating, updating, deleting and applying a Modern Experience SharePoint theme in SharePoint Online.">Modern Experience Theme Manager</a></td>
+        <td>David Warner II, Beau Cameron</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>Javascript</td>
+        <td>February 27, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/js-workbench-customizer" target="_blank" title="This sample shows how the Workbench page can be customized to display in a way that better mimics a modern SharePoint page. This is done using CSS overrides on some of the page styles, which does not cause any negative impact on your site as the web part is not intended to be consumed by final users, only developers. The web part also has some properties that control which customizations are applied to the workbench page (all enabled by default).">Workbench customizer</a></td>
+        <td>Joel Rodrigues</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>Javascript</td>
+        <td>January 24, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/knockout-dependent-properties" target="_blank" title="Sample Web Part illustrating...">Knockout Dependent Properties</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Knockout</td>
+        <td>May 20, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/knockout-sp-pnp-js" target="_blank" title="This webpart demonstrates how to integrate the @pnp/sp library into the SharePoint Framework as well as including mock data and simple list I/O.">Sample showing the use of @pnp/sp library with Knockoutjs</a></td>
+        <td>Patrick Rodgers</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>Knockout</td>
+        <td>November 14, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/knockout-taxonomy" target="_blank" title="Sample Web Part illustrating Reading taxonomy term stores' hierarchy from SharePoint, Loading JavaScript Object Model scripts, creating Knockout components">Taxonomy Web Part</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Knockout</td>
+        <td>May 5, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/pnp-controls" target="_blank" title="This is a sample project that contains a web part which makes use of the PnP SPFx Controls">SharePoint Framework PnP Controls Sample</a></td>
+        <td>Elio Struyf</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>March 03, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-3rd-party-api" target="_blank" title="This sub folders contains a client-side project that shows how to consume a 3rd party API within SharePoint Framework.">Consuming Third Party APIs secured with Azure Active Directory within SharePoint Framework</a></td>
+        <td>Paolo Pialorsi</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>February 19, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-aad-implicitflow" target="_blank" title="Sample SharePoint Framework web parts built using React illustrating different scenarios using implicit OAuth flow with Azure Active Directory.">Azure Active Directory implicit flow authentication samples</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>March 17, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-aad-webapi" target="_blank" title="Sample SharePoint Framework client-side web part illustrating communication with a custom Web API secured with Azure Active Directory.">Call custom Web API secured with AAD from SharePoint Framework client-side web part</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop4-red.svg" alt="drop4"/>
+
+        <td>React</td>
+        <td>October 10, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-accordion" target="_blank" title="This is a sample web Part that illustrates the use of React Accessible Accordion plugin for building SharePoint Framework client-side web parts to show SharePoint list data in Accordion format.">Using React Accordion plugin with SPFx</a></td>
+        <td>Gautam Sheth</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.5.1-green.svg" alt="1.5.1"/>
+
+        <td>React</td>
+        <td>August 17, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-adaptive-cards-image-gallery" target="_blank" title="This sample demonstrates the capability of using Adaptive Cards with SharePoint Framework. Adaptive cards are great fit for Bot, however they can be effectively used with SPFx to render the content. This web part helps to display the image gallery from SharePoint list.">Image Gallery Web Part Built with Adaptive Cards</a></td>
+        <td>Nanddeep Nachan, Ravi Kulkarni</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>November 28, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-aggregated-calendar" target="_blank" title="This is a sample webpart developed using React Framework to gather the aggregated events from the multiple calendars from multiple sites using Full Calendar from fullcalendar.io">React Aggregated Calendar Webpart</a></td>
+        <td>Dhaval Shah</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>July 16, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-app-settings" target="_blank" title="This sample shows how AppSettings.ts file can be added and used within SharePoint Framewrok webparts similar to the Web.config / App.config key value app settings in .NET Framework projects. That allows better DevOps and continuous integration (CI/CD) automation. The AppSettings.ts is transpiled/compiled with your SPFx solution which differs from the way the web.config. With .Net web.config file we would be able to update independently without the need of compiling DLLs. If that behavior is required, you can store your app settings in a SharePoint list and change them from there. However, that will have performance degradation over if the setting was part of the SPFx code where the logic can get a setting value in milliseconds.">SPFx React app settings webpart</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>March 03, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-async-await-sp-pnp-js" target="_blank" title="This webpart demonstrates how to use PnPJS with Async functions into the SharePoint Framework as well as integrating PnP JS and SPFx Logging systems. Real example querying SharePoint library to show document sizes.">React sample showing the use of @pnp/js with Async / Await</a></td>
+        <td>Jose Quinto</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>Jul 20, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-azfunc-vimeo" target="_blank" title="This sample shows how to consume third-party APIs through an Azure Functions by a Web Part.">Local Azure Function and SPFx Web Part Development to consume third party APIs</a></td>
+        <td>Stefan Bauer</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>July 24, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-birthdays" target="_blank" title="The Web Part Birthdays shows the upcoming birthdays in the company, the web part reads birthdays from a list located on the tenant's root site with title "Birthdays."">React Birthdays Web Part</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>July 23, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-bot-framework" target="_blank" title="A web part that uses the botframework-webchat module to create implement a React component to render the Bot Framework v4 webchat component. This web part is able to render Text and richt attachments (Images, Cards, Adaptive Cards, ...) and has settings for branding purposes.">Microsoft Bot Framework Web Chat</a></td>
+        <td>Gary Pretty, Stephan Bisser</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>September 4, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-calendar-feed" target="_blank" title="This web part uses event feeds from various sources and renders events using a look and feel that is consistent with the SharePoint out-of-the-box Group calendar/events web part.">React Calendar Feed Web Part</a></td>
+        <td>Hugo Bernier</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.9.1-green.svg" alt="1.9.1"/>
+
+        <td>React</td>
+        <td>August 17, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-calendar" target="_blank" title="This Web Part allows you to manage events in a calendar. Uses a list of existing calendars on any website. The location and name of the list and the dates of the events to be displayed are defined in the properties of the web part.">React Calendar</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 10, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-carousel" target="_blank" title="This web part show images and videos in carousel">React Carousel Web Part</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>July 11, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-chartcontrol" target="_blank" title="This sample contains several web parts that demonstrate how to use the ChartControl from @pnp/spfx-controls-react.">React Chart Control Samples</a></td>
+        <td>Hugo Bernier</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>January, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-comparer" target="_blank" title="Allows users to compare Before and After pictures, with a draggable slider. Implements a custom file picker.">React Comparer with File Picker</a></td>
+        <td>Hugo Bernier</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>January 27, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-components-dynamicloading" target="_blank" title="Load React components and third party packages on demand in SPFx">Code Splitting in SharePoint Framework</a></td>
+        <td>Vardhaman Deshpande</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>October 09, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-content-query-webpart" target="_blank" title="The React Content Query WebPart is a modern version of the good old Content by Query WebPart that was introduced in SharePoint 2007. Built for SharePoint 2016 and Office 365, this modern version is built against the new SharePoint Framework (SPFx) and uses the latest Web Stack practices. While the original WebPart was based on a XSLT templating engine, this React WebPart is based on the well known Handlebars templating engine, which empowers users to create simple, yet powerfull HTML templates for rendering the queried content. This new version also lets the user query any site collections which resides on the same domain url, add unlimited filters, query DateTime fields to the nearest minute rather than being limited to a day, and much more.">React Content Query WebPart</a></td>
+        <td>Simon-Pierre Plante</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 22, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-custompropertypanecontrols" target="_blank" title="Sample custom property pane controls built in React for use with SharePoint Framework client-side web parts.">Custom property pane controls built in React</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop4-red.svg" alt="drop4"/>
+
+        <td>React</td>
+        <td>May 1, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-designpatterns-typescript" target="_blank" title="In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.">Design Patterns applied to Sharepoint Framework</a></td>
+        <td>Luis Valencia</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 10, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-directory" target="_blank" title="Search People from Organization Directory and show live persona card on hover.">React Directory Web Part</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>July 29, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-display-hierarchy" target="_blank" title="At the time of developing this sample, the Office 365 UI fabric does not have any control for displaying hierarchical information. This web part helps to display the hierarchical information from SharePoint list.">Web part displaying hierarchical information from SharePoint list</a></td>
+        <td>Nanddeep Nachan, Ravi Kulkarni</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>October 15, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-documents-detailslist" target="_blank" title="This sample shows how to build web parts that display documents in accordance with the SharePoint Online modern experience. The code uses Office UI Fabric components on the top of SharePoint framework. The web parts implement filtering and sorting. Two data source approaches are demonstrated items retrieved from the search index and real-time query to a document library.">Documents Web Part</a></td>
+        <td>Dimcho Tsanov</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>October 13, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-events-aggregator" target="_blank" title="This sample shows how we can use the SPFx Event Aggregator to communicate between web parts through broadcasting events utilizing the Publish–subscribe pattern. It enables a webpart or component to raise event (broadcast message) through the SPFx event aggregator and that event is received by other web parts or components that have been subscribed to receive it.">SPFx Event Aggregator Sample</a></td>
+        <td>Miguel Rabaca, Velin Georgiev, Austin Breslin</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>November 18, 2018</td>
+        <td><span title="">Deprecated</span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-events-dynamicdata" target="_blank" title="Sample web parts illustrating using the SharePoint Framework Dynamic data capability.">Dynamic data</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>November 9, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-facebook-plugin" target="_blank" title="This sample shows how to implement iFrame-based web parts with a dynamic responsive behavior on the example of Facebook Page Social Plugin.">SharePoint Framework Facebook Page Social Plugin web part sample</a></td>
+        <td>Andrew Koltyakov</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.5.1-green.svg" alt="1.5.1"/>
+
+        <td>React</td>
+        <td>August 26, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-feature-framework" target="_blank" title="Simplistic solution demonstrating how to provision SharePoint assets using Feature Framework elements when SharePoint Framework solution is being deployed to a SharePoint site.">Deployment of SharePoint assets as part of SPFx package</a></td>
+        <td>Vesa Juvonen</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>February 27, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-file-upload" target="_blank" title="The file upload web part allowing users to upload multiple files to a document library or as item attachments.">React File Upload WebPart</a></td>
+        <td>Ramin Ahmadi</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>February 14, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-functional-component-with-data-fetch" target="_blank" title="This web part demonstrates building a React functional component that uses data from a remote service, in this case the Microsoft Graph, using the recently introduced React Hooks feature. The example web part renders a list of the user's Teams and, optionally, the channels in each Team.">React Functional Component web part with data fetch</a></td>
+        <td>Bill Ayers</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 14, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-functional-component" target="_blank" title="This web part is intended to be easier to understand for new developers building their first SPFx web part. It is a refactoring of the HelloWorld web part that is created by the @microsoft/generator-sharepoint Yeoman generator, and introduces React Functional Components.">React Functional Component web part</a></td>
+        <td>Bill Ayers</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 5, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-functional-stateful-component" target="_blank" title="This web part demonstrates building a React functional component that includes state, using the recently introduced React Hooks feature. The example web part renders a number to Roman numerals conversion tool.">React Functional Stateful Component web part</a></td>
+        <td>Bill Ayers</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 5, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-github-badge" target="_blank" title="Displays information about a GitHub user.">React GitHub Badge</a></td>
+        <td>Hugo Bernier</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 06, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-google-fit" target="_blank" title="This sample demonstrates integration of Google Fit information with SharePoint Framework. The Google Fitness REST APIs allows developers to extend it further and create their own dashboards. Google Fitness REST APIs are useful if you have fitness app and you want to integrate your data with google fit or if you just want to collect Fitness data and display some information to the users. This web part helps to display the key fitness information (activity time spent, distance travelled, calories burned, step count) from the Google fit data source.">Web part displaying Google Fit information</a></td>
+        <td>Nanddeep Nachan</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>January 14, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-graph-evalurl" target="_blank" title="This sample contains a class that evaluates the url input of a text field against the Microsoft Graph.">Webpart showing Url validation for SharePoint using Office Graph</a></td>
+        <td>Stefan Bauer</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>April 15, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-graph-feedback-form" target="_blank" title="Sample SPFx React web part which allows sending emails using Microsoft Graph.">Feedback Form</a></td>
+        <td>Sergei Zheleznov</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>August 12, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-graph-personalemail" target="_blank" title="Sample React web part showing how to retrieve and display personal e-mail retrieved using the Microsoft Graph.">Personal e-mail</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>October 3, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-graph-pnpjs" target="_blank" title="This webpart demonstrates how to use PnPJS with SharePoint Framework and how to query Microsoft Graph with PnPJS. It requests a list of Azure AD groups at your tenant and shows them using Office UI Fabric React list.">React sample showing the use of PnPJS with MS Graph</a></td>
+        <td>Sergei Sergeev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>Jan 09, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-graph-reports" target="_blank" title="This sample describe a SPFX application which retrieves an office 365 usage reports using Microsoft Graph API. This application also use chartjs library to generate graph.">React Graph Reports</a></td>
+        <td>Ejaz Hussain</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>April 09, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-graph-schema-extensions" target="_blank" title="This sample shows how read and update a custom Schema extension in MS Graph. It shows how to create a custom Schema extension in Graph to store custom data related to an Office 365 Group, and how we can read and update that data using an spfx webpart.">Spfx Webpart read / update MS Graph Custom Schema Extensions</a></td>
+        <td>Luis Mañez</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.5.1-green.svg" alt="1.5.1"/>
+
+        <td>React</td>
+        <td>July 03, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-hooks" target="_blank" title="The React Hooks web part is an example of how to implement Hooks in Spfx. Hooks is a new feature included in React version 16.8, with the new version of SharePoint Framework (SPFx) version 1.9.1 we can use them in our developments. In this example we are going to see the different types of hooks that are available and with the comparison of how this implementation can be done without the Hooks to be able to observe the benefits of using it.">React Hooks Form WebPart</a></td>
+        <td>Adrián Díaz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.9.1-green.svg" alt="1.9.1"/>
+
+        <td>React</td>
+        <td>August 19, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-image-gallery" target="_blank" title="This sample describe a SPFX application which implement an image gallery with taxonomy base filtering and typed search. This application also implement pagination.">Filterable Image Gallery Web Part</a></td>
+        <td>Ejaz Hussain</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>March 01, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-image-magnifier" target="_blank" title="This web part allow to magnify an image, displaying a resolution more detailed through a lens.">Image Magnifier</a></td>
+        <td>Giuliano De Luca</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>September 17, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-image-slider-list-taxonomy-filter" target="_blank" title="This webpart display the image in slider based on the filter of Taxonomy from Property panel. Images are stored in PhotoGallery and tagged with Taxonomy.">Image Slider from Photo Gallery using Taxonomy Filter</a></td>
+        <td>Sudhir Rawat</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>March 1, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-invitation-manager" target="_blank" title="Sample SharePoint Framework web parts built using React illustrating the possibility to use Graph API to invite external users into the Azure Active Directory.">Azure Active Directory invitation manager Graph API samples</a></td>
+        <td>Giuliano De Luca</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.3.0-green.svg" alt="1.3.0"/>
+
+        <td>React</td>
+        <td>October 09, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-ioc-tests" target="_blank" title="This web part is provided as an example of implementing an IoC (Inversion of Control) pattern in the context of a SharePoint Framework web part.">React Inversion Of Control Web Part with Unit Tests using Jest and Enzyme</a></td>
+        <td>Paul Ryan</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>March 20, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-item-History" target="_blank" title="This listview command is used to show the past versions of the selected list item in a grid.">React Item History</a></td>
+        <td>Russell Gove</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>June 15, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-jest-testing" target="_blank" title="This sample uses the popular Jest Testing Framework with a SPFx client side solution. It is a SPFx-Jest-Enzyme-Sinon starter kit so you can start writing and debugging unit tests in typescript for your SPFx solution. The setup includes unit tests examples, code coverage reports in different formats, visual studio code unit test debug configurations for typescript, setting a coverage threshold (gates) for continuous integration and continuous deployment scenarios.">SharePoint Framework React Jest Testing sample</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 23, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-kanban-board" target="_blank" title="This solution contains an SPFx webpart which shows a Kanban board using jqxKanban ReactJS component (from JQWidgets). The webpart uses the default columns of the SharePoint Tasks list for showing the board's columns and the tasks.">React Kanban Board Webpart</a></td>
+        <td>Ram Prasad Meenavalli</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>July 17, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-list-form" target="_blank" title="The React List Form web part is a web part for adding a list form to any page. It provides a working example of implementing generic SharePoint list forms using the SharePoint Framework (SPFx) and the React and Office UI Fabric libraries.">React List Form WebPart</a></td>
+        <td>Dany Wyss</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>February 22, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-manage-sitedesigns" target="_blank" title="This web part allows tenant administrators to manage site designs through a graphical interface.">React Site Designs Manager</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>April 08, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-material-ui" target="_blank" title="This sample shows how you can use Material UI components in your SharePoint Framework solution. In this sample you will find some of the Material UI components like Table, Dialog, Text Field and Icon. This sample also includes RXJS DebounceTime, this feature allows you to wait for a certain amount of time before make requests to the server while user is typing to prevent to make requests for each character.">React Material UI</a></td>
+        <td>Ramin Ahmadi</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.1-green.svg" alt="1.8.1"/>
+
+        <td>React</td>
+        <td>March 25, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-mobx-multiple-stores" target="_blank" title="A sample webpart that uses the Mobx library with multiple stores to keep track of the applications state.">Webpart with React and Mobx using multiple stores</a></td>
+        <td>Kemal Sinanagic</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>May 24, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-mobx" target="_blank" title="Sample webpart implementation that uses Mobx to keep track of its state.">Webpart with React and Mobx</a></td>
+        <td>Kevin Mees</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop5-red.svg" alt="drop5"/>
+
+        <td>React</td>
+        <td>November 4, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-modern-charts" target="_blank" title="This webpart uses the Chart.js library to visualize SharePoint list data.">Modern Charts</a></td>
+        <td>Jeremy Coleman</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>April 25, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-msal-msgraph" target="_blank" title="">Microsoft Authentication Library (MSAL JS) authentication sample</a></td>
+        <td>Elio Struyf</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>March 17, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-multilist-grid" target="_blank" title="React-multilist-grid is an SPFX webpart that uses React, Office-UI-Fabric, and Redux to let users edit list data from lists that reside in multiple webs and multiple sites in a single grid, similar to Quick Edit mode. The lists do not to be of the same type – you just need to create column mappings to tell the webpart which fields to show in which columns of the grid.">SPFX React Grid</a></td>
+        <td>Russell Gove</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-rc0-green.svg" alt="rc0"/>
+
+        <td>React</td>
+        <td>December 31, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-multimedia-gallery" target="_blank" title="This web part show images and videos in responsive grid, on click it show images and videos in a carousel view.">React Image Gallery</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>June 24, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-multipage" target="_blank" title="Sample SharePoint Framework client-side web parts built using React illustrating building multi-page web parts.">React multi-page client-side web part</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 1 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-multiscreen-webpart" target="_blank" title="This sample uses the popular React Router library to create tab, multi-screen or single page app (spa) experience in React SPFx web part. This is useful when the web part is more complex and to simplify the user experience multiple screens or tabs are needed. The same approach can be taken when a single page app (SPA) has to be migrated to modern SharePoint sites.">SharePoint Framework React multi screen web part sample</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.2-green.svg" alt="1.8.2"/>
+
+        <td>React</td>
+        <td>July 3, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-my-teams" target="_blank" title="This sample uses Microsoft Graph to list the Teams the current user is a member of. When the user clicks on one of the teams, the web part retrieves information about the default channel (General) and opens it. The web part can be configured to open the team on the web browser or client app.">React My Teams</a></td>
+        <td>Joel Rodrigues</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>February 26, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-officegraph" target="_blank" title="">React & Office Graph Web Part samples</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 31, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-offline-first" target="_blank" title="Sample SharePoint Framework Client-Side Web Parts built using React showing interacting with the Office Graph.">Offline First React Webpart built using LocalForage, Whatwg-Fetch, ES6-Promise</a></td>
+        <td>Austin Breslin</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 31, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-organisationchart" target="_blank" title="A simple Organisation Chart webpart using Office UI Fabric, React, REST API batching and ServiceScope plumbing.">Organisation Chart</a></td>
+        <td>Vardhaman Deshpande</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>July 19, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-page-navigator" target="_blank" title="This web part fetches all the automatically added Header anchor tags in a SharePoint page and displays them in a Navigation component.">React Page Navigator</a></td>
+        <td>Aakash Bhardwaj</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.9.1-green.svg" alt="1.9.1"/>
+
+        <td>React</td>
+        <td>September 5, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-page-sections-navigation" target="_blank" title="Sample web parts allowing to add sections navigation to the SharePoint page.">Page Sections Navigation</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>March 22, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-pagecontributors" target="_blank" title="Displays page contributors in reverse chronological order.">Page Contributors Web Part</a></td>
+        <td>Stéphane Magne</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>July 27, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-peoplepicker" target="_blank" title="SharePoint Framework solution with the Office UI Fabric People Picker, the client web part across the SharePoint Rest API is able to retrieve people and groups.">People Picker (React)</a></td>
+        <td>Giuliano De Luca</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>Dec 06, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-project-online" target="_blank" title="This sample shows how to use SPFx to consume data from the Project Online REST API.">React Project Online</a></td>
+        <td>Joel Rodrigues</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>October 03, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-property-bag-editor" target="_blank" title="A set of webparts that lets you set property bag settings on site collections and enable navigation using those properties.">Property Bag Navigation Webparts</a></td>
+        <td>Russell Gove</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>March 19, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-provision-assets" target="_blank" title="This sample shows how we can provision Document Library, Custom List, Web and List PropertyBag properties, Site Columns, Content Types, Images, Site Page with the SFPx Client side webpart and even prepopulated list and library items along with the SPFx solution package. All of the components can be deployed at once with the SPFx webpart when the app is added to a SharePoint site. It also contains custom list and document library xml schemas.">Provision SharePoint Assets with the SPFx solution package</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>June 17, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-real-time" target="_blank" title="This sample shows you how to implement real time web parts using the SPFx, Azure Logic Apps, Node.js and socket.io.">Real Time News Feed using Azure Logic Apps, Node.js and socket.io</a></td>
+        <td>Franck Cornu</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop4-red.svg" alt="drop4"/>
+
+        <td>React</td>
+        <td>November 4, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-realtime-documents" target="_blank" title="Sample web part illustrating using the SharePoint Framework List subscription capability, which allows you to get notified of changes to documents in a SharePoint Document Library and refresh the displayed data.">List subscription</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>November 9, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-redux-async-immutablejs" target="_blank" title="SharePoint Framework webpart which uses Redux to maintain a single state for the entire application and ImmutableJS to create performant state trees.">SharePoint Framework webpart sample using React, Redux and ImmutableJS</a></td>
+        <td>Vardhaman Deshpande</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>July 11, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-redux" target="_blank" title="Sample webpart implementation that uses Redux to keep track of its state.">Webpart with React and Redux</a></td>
+        <td>Kevin Mees</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop5-red.svg" alt="drop5"/>
+
+        <td>React</td>
+        <td>October 28, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-reduxform" target="_blank" title="Sample webpart to demonstrate the use of Redux-Form library with SPFx, React and Typescript. Demonstrates how to easily build a dynamic grid using redux-form.">SPFx webpart using Redux-Form library and React</a></td>
+        <td>Vipul Kelkar</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>May 02, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-rss-reader" target="_blank" title="A RSS Reader original based on work completed by Olivier Carpentier's">SharePoint Framework RSS Reader</a></td>
+        <td>Eric Overfield</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>Jan 21, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-rxjs-event-emitter" target="_blank" title="This sample shows how we can use the ReactiveX (RxJs) library with the SharePoint Framework to communicate between web parts through broadcasting events utilizing the Publish–subscribe pattern. It enables a webpart or component to emit event (broadcast message) and that event is received by other web parts or components that have been subscribed to receive it. Please note this is custom implementation of the Publish–subscribe pattern by using the ReactiveX (RxJs) library. The SPFx will nativelly support this in future without the need of custom implementation through new SPFx api called Event Aggregator, but it is still in Alpha.">SPFx ReactiveX (RxJs) Event Emitter Sample</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>December 10, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-script-editor" target="_blank" title="Coming from old classic SharePoint pages you might have existing script solutions you want to re-use on a modern page without having to repackage it as a new SharePoint Framework web part.">Script editor web part for modern pages built in React</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>July 1, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-search" target="_blank" title="Sample Search Web Part with internal and external template support. This sample illustrates how you can use React and Flux within the SharePoint Framework.">Search Client-Side Web Part built with React and Flux</a></td>
+        <td>Elio Struyf</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>February 28, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-securitygrid" target="_blank" title="React-securitygrid is an SPFX webpart that uses React and Office-UI-Fabric to render a grid showing which users have access to which lists/libraries/folders/files on a Web">SPFX React Grid</a></td>
+        <td>Russell Gove</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>April 25, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-side-panel" target="_blank" title="The web part illustrates creation and usage of Side Panel (Sidebar) control.">React Side Panel Client-Side Web Part</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 11, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-site-provisioning-manager" target="_blank" title="This sample shows how you can manage site provisioning by calling Azure functions.">Site Provisioning Manager Web Part</a></td>
+        <td>Ramin Ahmadi</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.9.0-green.svg" alt="1.9.0"/>
+
+        <td>React</td>
+        <td>August 14, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-sitepages-metadata" target="_blank" title="Solution provides an enhancement to SitePages library that enables updating existing items with metadata, and a rollup WebPart to display them.">React Sitepages Metadata</a></td>
+        <td>Oleg Rumiancev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.1-green.svg" alt="1.4.1"/>
+
+        <td>React</td>
+        <td>April 17, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-skype-status" target="_blank" title="This sample demonstrates how to use the UCWA JS SDK for skype with the SharePoint Framework. It shows how to subscribe to status change of the different people of the organization but you can get much more information, checkout the documentation">React Skype Status WebPart</a></td>
+        <td>Vincent Biret</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>March 27, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-slide-swiper" target="_blank" title="This SPFx React web part sample demonstrates mobile touch slide swiper. By default the swiper web part is responsive, has cross device and browser touch support and uses paging, but additional features like navigation, autoplay, loop of the slides and more can be enabled from the web part properties panel. The swiper web part can be used as carousel as well. The slides or cards template can easily be customized. The SPFx React swiper client side solution can easly be extended with more swiper, carousel like features because it is based on a popular feature rich JavaScript library called Swiper.">SPFx React Slide Swiper</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>December 10, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-sp-elevatedprivileges" target="_blank" title="Sample SharePoint Framework client-side web part illustrating communication with SharePoint using elevated privileges through a custom Web API.">Communicate using elevated privileges with SharePoint</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop4-red.svg" alt="drop4"/>
+
+        <td>React</td>
+        <td>October 12, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-sp-pnp-js-property-decorators" target="_blank" title="This webpart demonstrates how to use PnP JS Core Custom Objects with @select and @expand TypeScript decorators.">React sample showing the use of PnP JS Core custom objects with @select and @expand decorators</a></td>
+        <td>Jose Quinto</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>July 2, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-taxonomypicker-panel" target="_blank" title="Sample webpart with Single and Multi-select taxonomy pickers using Office UI Fabric panel. The webpart uses the Taxonomy API support available in the @pnp/taxonomy.">SPFx webpart with Taxonomy picker Office UI Fabric Panel</a></td>
+        <td>Vipul Kelkar</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.5.1-green.svg" alt="1.5.1"/>
+
+        <td>React</td>
+        <td>August 20, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-taxonomypicker" target="_blank" title="A Taxonomy Picker control built with React based on react-taxonomypicker for use with SharePoint Framework client-side web parts (SPFx).">Taxonomy Picker (React)</a></td>
+        <td>Jose Quinto</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>March 14, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-team-creator" target="_blank" title="The web part illustrates usage of MS Graph beta APIs to work with Teams">React Teams Creator Web Part</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>November 19, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-field-visit-mashup" target="_blank" title="A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits.">Teams Tab - Field Visit Demo (Mashup)</a></td>
+        <td>Bob German</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>April 20, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-suggested-members" target="_blank" title="This webpart uses Graph API to suggest you members to add to a group (based on People endpoint), so you can easily add those members to the Group / Teams. It can be used as a SharePoint webpart or Teams tab">Spfx Webpart / Teams tab Group members suggestion</a></td>
+        <td>Luis Mañez</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.0-green.svg" alt="1.7.0"/>
+
+        <td>React</td>
+        <td>November 18, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging" target="_blank" title="This sample shows how read and update a custom Schema extension in MS Graph to Tag a Team using metadata from a specific TermSet in SharePoint.">SPFx webpart to Tag Teams using a TermSet in SharePoint</a></td>
+        <td>Luis Mañez</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.0-green.svg" alt="1.8.0"/>
+
+        <td>React</td>
+        <td>April 18, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-tenant-properties" target="_blank" title="This web part allows tenant administrators to manage tenant properties through a graphical interface. We can create, edit or delete tenant properties.">React Tenant Properties Web Part</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>March 08, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-themes" target="_blank" title="This web part illustrates how to use SharePoint Theme variables in custom web parts.">SharePoint Themes Client Side Web Part</a></td>
+        <td>Alex Terentiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 8, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-tinymce" target="_blank" title="React TinyMCE is one of the worlds most popular editors for the web. It has many features out of the box and many more plugins that can be added when needed. You can create your own plugins if you want, the editor is powered by the communitiy.">React TinyMCE Editor WebPart Integration with SharePoint</a></td>
+        <td>AustinBreslinDev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>February 01, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-todo-basic" target="_blank" title="A simple todo web part built using react to showcase some of the SharePoint Framework developer features, utilities and best practices in building react based web parts.">React Todo Basic</a></td>
+        <td>Chakkaradeep Chandran</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>May 4, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-tree-orgchart" target="_blank" title="The Tree Organization WebPart shows the Organization Chart of the or the team, the web part reads infomation from current user to build the Organization Chart.">React Tree Organization Web Part</a></td>
+        <td>João Mendes</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>February 25, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-videolibrary" target="_blank" title="A set of 3 SPFX webparts that use different open-source carousels (react-3d-carousel, reactjs-coverface, and react-slick) to display videos stored on an Office 365 Video Channel">React Video Library</a></td>
+        <td>Russell Gove</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-drop5-red.svg" alt="drop5"/>
+
+        <td>React</td>
+        <td>December 31, 2016</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-visio" target="_blank" title="This sample shows how the Visio JavaScript APIs can be used within a web part. For sample purposes, this web part will display the name and the hyperlinks of a Visio shape when the user selects it.">React Visio Embed</a></td>
+        <td>Joel Rodrigues</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>April 4, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-webcam" target="_blank" title="This is sample webpart to showcase how to open webcam and take photo in SPFx webpart.">SPFx Web/Mobile Camera Demo</a></td>
+        <td>Siddharth Vaghasia</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.9.1-green.svg" alt="1.9.1"/>
+
+        <td>React</td>
+        <td>September 05, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-webhooks-realtime" target="_blank" title="This web part demonstrates how to leverage the capabilities of SharePoint Webhooks. The libraries used by this web part are Socket.io, sp pnp js, moment.">Webhooks Realtime</a></td>
+        <td>Giuliano De Luca</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>October 29, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-yammer-api" target="_blank" title="This sample shows how Yammer REST APIs can be consumed by using SharePoint Framework React webpart and the Yammer JavaScript SDK. The SPFx webpart contains wrapper around the Yammer JavaScript SDK that can be extended for fluent typescript api experience.">Yammer REST API SPFx webpart</a></td>
+        <td>Velin Georgiev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>April 19, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-youtube" target="_blank" title="This web part allows to search and view the Youtube videos, across the Youtube API, directly on a SharePoint page, furthermore the property panel offers the possibility to specify the api key, the number of items to display and it is also possible specify a Youtube Channel Id.">Youtube Web Part</a></td>
+        <td>Giuliano De Luca</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>React</td>
+        <td>October 02, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/riot-list" target="_blank" title="Simplistic sample Web Part that demonstrates the use of RiotJS in creating a SharePoint Framework web part.">List RiotJS Client-Side Web Part</a></td>
+        <td>Sébastien Levert</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-GA-green.svg" alt="GA"/>
+
+        <td>Other</td>
+        <td>April 26, 2017</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/section-backgrounds" target="_blank" title="These samples show how to implement support for section backgrounds in your web parts.">Supporting section backgrounds in your web parts</a></td>
+        <td>Chris Kent</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.7.1-green.svg" alt="1.7.1"/>
+
+        <td>React</td>
+        <td>March 13, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/sharepoint-crud" target="_blank" title="Sample Web Parts illustrating performing SharePoint CRUD operations in React, Angular, JavaScript without any framework and using the @pnp/sp library.">SharePoint CRUD operations</a></td>
+        <td>Waldek Mastykarz</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.6.0-green.svg" alt="1.6.0"/>
+
+        <td>React</td>
+        <td>November 1, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/vue-js-org-chart" target="_blank" title="A simple Organisation Chart webpart using Office UI Fabric, VueJS, REST API.">VueJS Org Chart</a></td>
+        <td>Serdar Ketenci̇</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.8.1-green.svg" alt="1.8.1"/>
+
+        <td>VueJS</td>
+        <td>June 11, 2019</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    <tr>
+        <td><a href="https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/vuejs-todo-single-file-component" target="_blank" title="Sample Todo web part demonstrating how you can utilize Vue (a progressive framework for building user interfaces) with SharePoint Framework using handy single-file components approach.">Todo Client Web Part built with Vue.js and Vue's single-file components</a></td>
+        <td>Sergei Sergeev</td>
+        <td>
+
+            <img src="https://img.shields.io/badge/drop-1.4.0-green.svg" alt="1.4.0"/>
+
+        <td>VueJS</td>
+        <td>December 11, 2018</td>
+        <td><span title=""></span></td>
+    </tr>
+
+    </tbody>
+</table>
+
+<p><img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/docs/samples/allstatus" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/officedevpnp" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.youtube.com/playlist?list=PLR9nK3mnD-OXgMjDBdjWUTRia89oixBhx" class="md-footer-social__link fa fa-youtube"></a>
+    
+      <a href="https://aka.ms/sppnp" class="md-footer-social__link fa fa-link"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+      
+        <script src="../../javascript/filtersamples.js"></script>
+      
+    
+  </body>
+</html>
